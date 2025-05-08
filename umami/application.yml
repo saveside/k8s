@@ -1,0 +1,26 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: umami
+  namespace: argocd
+spec:
+  destination:
+    namespace: umami-k8s
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    chart: umami
+    helm:
+      parameters:
+      - name: global.main.appSecret.autoCreate
+        value: kustomize
+      - name: global.postgresql.secret.autoCreate
+        value: kustomize
+      values: |-
+    repoURL: https://helm.mtaha.dev
+    targetRevision: '*'
+  syncPolicy:
+    automated: {}
+    syncOptions:
+    - CreateNamespace=true

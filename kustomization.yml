@@ -1,0 +1,14 @@
+resources:
+  - argocd/pre/
+  - cert-manager/pre/
+  - metallb/
+  - traefik/
+  - argocd/post/
+  - cert-manager/post/
+  - longhorn/
+  - kubernetes-reflector/
+  - gatus/
+  - nextcloud/
+  - tailscale-operator/
+  - umami/
+  - vaultwarden/
