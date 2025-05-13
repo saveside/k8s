@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/saveside/k8s/refs/heads/main/assets/honey-k8s.png" height="150">
+<img src="https://raw.githubusercontent.com/saveside/k8s/refs/heads/main/assets/honey-k8s.png" height="100">
 
 # Save's Kubernetes setup
 
