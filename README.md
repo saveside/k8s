@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/xelab04/ServiceLogos/refs/heads/main/Kubernetes/Kubernetes%20V3.png" height="100">
+<img src="https://raw.githubusercontent.com/saveside/k8s/refs/heads/main/assets/honey-k8s.png" height="200">
 
 # Save's Kubernetes setup
 
