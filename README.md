@@ -2,7 +2,15 @@
 
 # Save's Kubernetes setup
 
-### Components
+### 🐝 Cluster Nodes
+
+| Role      | Hostname        | Location     | OS       | CPU  | RAM   | Machine |
+|-----------|------------------|----------------|--------------------------|------|-------|-------------------|
+| Master    | honeypie        | Hetzner Cloud   | Fedora Cloud     | Intel Xeon (Skylake, IBRS, no TSX) (2) @ 2.10 GHz (x86_64)| 4 GB | CX22  |
+| Worker    | honeybee        | Hetzner Cloud   | Fedora Cloud     | Intel Xeon (Skylake, IBRS, no TSX) (4) @ 2.10 GHz (x86_64) | 8 GB | CX32 |
+
+
+### 🍯 Components
 
 - Anki Sync - For self-hosted Anki Flashcards
 - ArgoCD - For GitOps, manages all the deployments (except itself and the CNI)
@@ -18,7 +26,7 @@
 - Umami - For analytics
 - Vaultwarden - For password management
 
-## Installation
+### Installation
 
 This setup uses Kustomize to manage the manifests. To install the setup, clone the repo and run the following commands:
 
